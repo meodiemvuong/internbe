@@ -16,3 +16,6 @@ class User(AbstractUser):
 
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = []
+
+    def get_company(self):
+        return self.company
